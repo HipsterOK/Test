@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Spin"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Score: "
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="0.29"/>
+
+    <ImageView
+        android:id="@+id/ivTarget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:srcCompat="@drawable/target"
+        android:layout_weight="0.29"/>
+
+    <ImageView
+        android:id="@+id/ivWheel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="17"
+        app:srcCompat="@drawable/wheel"
+        android:gravity="center"
+        android:layout_weight="0.12"/>
+
+    <Button
+        android:id="@+id/btnSpin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="SPIN"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/ivWheel"
+        android:layout_weight="0.3"/>
+
+</LinearLayout>
